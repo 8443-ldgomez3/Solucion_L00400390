@@ -7,16 +7,22 @@
     initial-scale=1, maximum-scale=1,minimum-scale=1">
     <link rel="stylesheet" href="Recursos/MisEstilos.css">
   </head>
+
   <body>
-    <form class="" action="" method="post" name="FormContacto">
+
+    <form class="" action="" method="post" onsubmit="validar()" name="FormContacto">
       <h2>Contacto</h2>
       <p>Correo Electronico</p>
-      <input type="email" name="txtEmail" placeholder="&#9993; usuario@mail.com">
+      <input type="email" id="email" name="txtEmail" placeholder="&#9993; usuario@mail.com" required>
       <p>Fecha de Nacimiento</p>
-      <input type="date" name="txtFecha">
+      <input type="date" name="txtFecha" required>
       <p>Teléfono</p>
-      <input type="text" name="txtTelefono" maxlength="10" placeholder="&#9742; Telefono">
-      <input type="submit" name="BtnEnviar" value="Enviar">
+      <input type="text" id="telefono" name="txtTelefono" maxlength="10" placeholder="&#9742; Telefono" required>
+      <input type="button" name="BtnEnviar" value="Enviar" id="btn" onclick="deshabilitar()">
     </form>
+
+    <script src="jsContacto/validaciones.js"></script>
+
   </body>
+  
 </html>

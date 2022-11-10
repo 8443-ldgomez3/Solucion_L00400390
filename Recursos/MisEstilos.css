@@ -34,7 +34,7 @@ input{
   font-size: 20px;
 }
 
-input[type=submit]{
+input[type=button]{
   background: linear-gradient(#FFDA63, #FFB940);
   border:0;
   color: brown;
@@ -44,7 +44,7 @@ input[type=submit]{
   margin-bottom: 0;
 }
 
-input[type=submit]:active{
+input[type=button]:active{
   transform: scale(0.95);
 }
 
