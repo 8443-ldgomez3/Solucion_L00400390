@@ -64,6 +64,10 @@
   --bs-body-bg: #fff;
 }
 
+.logo {
+  height: 140px;
+  margin-top: -45px;
+}
 
 .boton1 {
     color: #E59866;
